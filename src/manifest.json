@@ -1,0 +1,35 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Selected",
+      "identifier": "neat-artboards.selected",
+      "script": "./commands/arrange-selected.js"
+    },
+    {
+      "name": "Current Page",
+      "identifier": "neat-artboards.current-page",
+      "script": "./commands/arrange-on-current-page.js"
+    },
+    {
+      "name": "All Pages",
+      "identifier": "neat-artboards.all-pages",
+      "script": "./commands/arrange-on-all-pages.js"
+    },
+    {
+      "name": "Custom",
+      "identifier": "neat-artboards.custom",
+      "script": "./commands/arrange-custom.js"
+    }
+  ],
+  "menu": {
+    "title": "Rearrange Artboards",
+    "items": [
+      "neat-artboards.selected",
+      "neat-artboards.current-page",
+      "neat-artboards.all-pages",
+      "neat-artboards.custom"
+    ]
+  }
+}
